@@ -1,0 +1,35 @@
+{
+  "name": "react-stickmotion",
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "rollup": "rollup -c --bundleConfigAsCjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DemienDrost/react-stickmotion.git"
+  },
+  "author": "Demiën Drost",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DemienDrost/react-stickmotion/issues"
+  },
+  "homepage": "https://github.com/DemienDrost/react-stickmotion#readme",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.5",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-typescript": "^11.1.5",
+    "@types/react": "^18.2.28",
+    "react": "^18.2.0",
+    "rollup": "^4.0.2",
+    "rollup-plugin-dts": "^6.1.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.2.2"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts"
+}
