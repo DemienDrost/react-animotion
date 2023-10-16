@@ -1,5 +1,5 @@
 import { ReactNode, HTMLAttributes } from 'react';
-// import style from './Sticky.module.scss';
+import style from './Sticky.module.scss';
 
 type StickyProps = HTMLAttributes<HTMLDivElement> & {
     children: ReactNode;

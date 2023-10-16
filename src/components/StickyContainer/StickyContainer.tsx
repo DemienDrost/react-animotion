@@ -1,5 +1,5 @@
 import { ReactNode, useEffect, useRef } from "react";
-// import style from "./StickyContainer.module.scss";
+import style from "./StickyContainer.module.scss";
 
 interface StickyContainerProps {
   children: ReactNode;
