@@ -3,17 +3,17 @@ export default function useAnimotionHelpers() {
     let newProperty: string;
     let newValue: string | number;
     switch (property) {
-      case 'y':
-        newProperty = 'transform';
+      case "y":
+        newProperty = "transform";
         newValue = `translateY(${value}px)`;
         break;
-      case 'opacity':
+      case "opacity":
         newProperty = property;
         newValue = value;
         break;
       default:
         newProperty = property;
-        newValue = value + 'px';
+        newValue = value + "px";
         break;
     }
 
