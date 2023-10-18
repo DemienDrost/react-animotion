@@ -1,5 +1,5 @@
 {
-  "name": "@demiendrost/react-stickmotion",
+  "name": "@demiendrost/react-animotion",
   "version": "0.0.1",
   "type": "module",
   "scripts": {
@@ -7,14 +7,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DemienDrost/react-stickmotion.git"
+    "url": "git+https://github.com/DemienDrost/react-animotion.git"
   },
   "author": "Demiën Drost",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/DemienDrost/react-stickmotion/issues"
+    "url": "https://github.com/DemienDrost/react-animotion/issues"
   },
-  "homepage": "https://github.com/DemienDrost/react-stickmotion#readme",
+  "homepage": "https://github.com/DemienDrost/react-animotion#readme",
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "tslib": "^2.6.2"
+  },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^25.0.5",
     "@rollup/plugin-node-resolve": "^15.2.3",
@@ -27,7 +31,6 @@
     "rollup-plugin-dts": "^6.1.0",
     "rollup-plugin-postcss": "^4.0.2",
     "sass": "^1.69.3",
-    "tslib": "^2.6.2",
     "typescript": "^5.2.2",
     "typings-for-css-modules-loader": "^1.7.0"
   },
