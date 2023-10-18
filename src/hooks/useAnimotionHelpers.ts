@@ -1,18 +1,4 @@
 export default function useAnimotionHelpers() {
-  const interpolate = (
-    rangeStart: number,
-    rangeEnd: number,
-    selectedStart: number,
-    selectedEnd: number,
-    value: number
-  ) => {
-    const rangeDiff = rangeEnd - rangeStart;
-    const selectedDiff = selectedEnd - selectedStart;
-    const valueDiff = value - rangeStart;
-    const scale = valueDiff / rangeDiff;
-    return selectedStart + scale * selectedDiff;
-  };
-
   const getStyle = (property: string, value: number | string) => {
     let newProperty: string;
     let newValue: string | number;
@@ -34,5 +20,5 @@ export default function useAnimotionHelpers() {
     return [newProperty, newValue];
   };
 
-  return { interpolate, getStyle };
+  return { getStyle };
 }
