@@ -1,6 +1,6 @@
 {
   "name": "@demiendrost/react-animotion",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "scripts": {
     "rollup": "rollup -c --bundleConfigAsCjs"

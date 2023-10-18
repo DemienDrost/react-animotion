@@ -1,4 +1,4 @@
-export default function useImagePreloader() {
+export default function useAnimotionHelpers() {
   const interpolate = (
     rangeStart: number,
     rangeEnd: number,
