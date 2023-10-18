@@ -1,5 +1,5 @@
 {
-  "name": "@demiend/react-animotion",
+  "name": "react-animotion",
   "version": "0.0.3",
   "type": "module",
   "scripts": {
@@ -38,8 +38,5 @@
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org"
-  }
+  "types": "dist/index.d.ts"
 }
