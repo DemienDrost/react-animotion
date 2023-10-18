@@ -19,14 +19,14 @@ const StickyContainer = ({
       if (!percentageScrolledCallback || !stickyContainerRef.current) return;
 
       const container = stickyContainerRef.current;
-      const scrollTop = window.pageYOffset;
+      const scrollTop = window.scrollY;
       const windowHeight = window.innerHeight;
 
       const containerTop = container.offsetTop;
       const containerHeight = container.offsetHeight;
 
-        const percentageScrolled =
-            (scrollTop - containerTop) / (containerHeight - windowHeight);
+      const percentageScrolled =
+        (scrollTop - containerTop) / (containerHeight - windowHeight);
 
       percentageScrolledCallback(percentageScrolled);
     };
