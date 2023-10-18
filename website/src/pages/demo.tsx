@@ -1,5 +1,7 @@
+import Demo1 from "../components/Demo1/Demo1";
+
 const DemoPage = () => {
-    return ( <h2>demopage</h2> );
-}
- 
+  return <Demo1 />;
+};
+
 export default DemoPage;
