@@ -1,5 +1,5 @@
 {
-  "name": "@demiendrost/react-animotion",
+  "name": "@demiend/react-animotion",
   "version": "0.0.3",
   "type": "module",
   "scripts": {
@@ -40,6 +40,6 @@
   ],
   "types": "dist/index.d.ts",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/demiendrost"
+    "registry": "https://registry.npmjs.org"
   }
 }
