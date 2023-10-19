@@ -31,7 +31,7 @@ export default [
         use: ["sass"],
       }),
     ],
-    external: ["react", /node_modules/],
+    external: ["react", /node_modules/, /website/],
   },
   {
     input: "dist/esm/types/index.d.ts",
