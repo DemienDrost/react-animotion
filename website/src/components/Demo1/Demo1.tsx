@@ -1,4 +1,9 @@
-import { StickyContainer, Sticky, useAnimotionHelpers } from "react-animotion";
+import {
+  StickyContainer,
+  Sticky,
+  useAnimotionHelpers,
+  KeyframeAnimotion,
+} from "react-animotion";
 import { CodeBlock, dracula } from "react-code-blocks";
 import styles from "./Demo1.module.scss";
 import { useEffect, useRef, useState } from "react";
@@ -13,13 +18,15 @@ const Demo1 = () => {
   useEffect(() => {
     const animations: KeyframeAnimotion[] = [
       {
-        name: "block--1",
-        start: 0,
-        end: 0.75,
-        ref: block1ref,
+        options: {
+          name: "block--1",
+          start: 0,
+          end: 0.75,
+          ref: block1ref,
+        },
         keyframes: {
           0: {
-            opqacity: 1,
+            opacity: 1,
             y: -100,
           },
           75: {
@@ -33,10 +40,12 @@ const Demo1 = () => {
         },
       },
       {
-        name: "block--2",
-        start: 0.25,
-        end: 1,
-        ref: block2ref,
+        options: {
+          name: "block--2",
+          start: 0.25,
+          end: 1,
+          ref: block2ref,
+        },
         keyframes: {
           0: {
             opqacity: 0,
