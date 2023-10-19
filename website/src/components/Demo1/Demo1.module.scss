@@ -1,0 +1,38 @@
+.demo_1 {
+    :global {
+        .container-fluid {
+            display: flex;
+            .left, .right {
+                width: 50%;
+            }
+
+            .right {
+                background-color: var(--secondary);
+                padding: 2rem;
+            }
+        }
+    }
+}
+
+.stickyDemo1 {
+    :global {
+        position: relative;
+        .block {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+
+            width: 100px;
+            height: 100px;
+            &.block--1 {
+                background-color: var(--primary);
+                left: 25%;
+            }
+            
+            &.block--2 {
+                background-color: var(--darker);
+                left: 75%;
+            }
+        }
+    }
+}

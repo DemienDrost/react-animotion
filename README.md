@@ -17,7 +17,15 @@ To be added
 
 ### Contribute
 
-To be added
+For working on the (demo) website, we use pnpm.
+
+```
+% pnpm install                           # install packages
+% pnpm -F react-animotion rollup         # build the package
+% pnpm -F website dev                    # start the website in watch mode
+```
+
+To be added...
 
 ### License
 
