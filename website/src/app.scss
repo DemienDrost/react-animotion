@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Bayon&family=Source+Code+Pro&family=Urbanist:wght@100..900&display=swap");
+
+:root {
+  --primary: #588157;
+  --secondary: #a3b18a;
+
+  --light: #dad7cd;
+  --darker: #3a5a40;
+  --dark: #344e41;
+
+  --font-display: "Bayon", sans-serif;
+  --font-regular: "Urbanist", sans-serif;
+  --font-mono: "Source Code Pro", monospace;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: var(--font-regular);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+  background-color: var(--light);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    max-width: 100%;
+    margin: 0 auto;
+}
