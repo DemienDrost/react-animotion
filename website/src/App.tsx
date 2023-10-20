@@ -18,7 +18,10 @@ function App() {
         <Route path="docs" element={<DocsPage />} />
         <Route path="demo" element={<DemoPage />} />
       </Route>
-    )
+    ),
+    {
+      basename: "/react-animotion/",
+    }
   );
 
   return <RouterProvider router={router} />;
