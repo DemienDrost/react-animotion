@@ -34,7 +34,7 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: rdp-dist
-          path: dist
+          path: website/dist
 
   build-website:
     needs: [build-react-animotion]
@@ -79,7 +79,7 @@ jobs:
       - uses: actions/download-artifact@v3
         with:
           name: rdp-dist
-          path: dist
+          path: website/dist
       - run: pnpm install --frozen-lockfile
       - uses: peaceiris/actions-gh-pages@v3
         with:
