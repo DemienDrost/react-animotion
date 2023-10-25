@@ -1,4 +1,4 @@
-# React Animotion
+![React animotion](https://demiendrost.github.io/react-animotion/src/assets/Logo%20light.svg)
 
 An open source library for React, made by Arcadians.
 
@@ -92,7 +92,7 @@ const animations = [
     },
     keyframes: {
       0: {
-        opqacity: 0,
+        opacity: 0,
         y: 100,
       },
       25: {
