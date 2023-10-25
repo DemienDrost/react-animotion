@@ -48,7 +48,7 @@ const Demo1 = () => {
         },
         keyframes: {
           0: {
-            opqacity: 0,
+            opacity: 0,
             y: 100,
           },
           25: {
@@ -87,18 +87,87 @@ const Demo1 = () => {
             <Sticky>
               <div className="center">
                 <h2>Keyframe on scroll</h2>
-                <CodeBlock
-                  text={`
-                          <StickyContainer height="300vh">
-                              <Sticky>
-                                  <div className="block"></div>
-                              </Sticky>
-                          </StickyContainer>
+                <div className="codeBlock">
+                  <CodeBlock
+                    text={`
+<StickyContainer height="300vh">
+    <Sticky>
+        <div className="block"></div>
+    </Sticky>
+</StickyContainer>
                       `}
-                  language="javascript"
-                  showLineNumbers={true}
-                  theme={dracula}
-                />
+                    language="javascript"
+                    showLineNumbers={true}
+                    theme={dracula}
+                  />
+                </div>
+                <hr />
+                <h2>Implementation</h2>
+                <div className="codeBlock">
+                  <CodeBlock
+                    text={`
+const [percentageProgressed, setPercentageProgressed] = useState(0);
+const { tween } = useAnimotionHelpers();
+
+const block1ref = useRef(null);
+const block2ref = useRef(null);
+
+useEffect(() => {
+  const animations: KeyframeAnimotion[] = [
+    {
+      options: {
+        name: "block--1",
+        start: 0,
+        end: 0.75,
+        ref: block1ref,
+      },
+      keyframes: {
+        0: {
+          opacity: 1,
+          y: -100,
+        },
+        75: {
+          opacity: 1,
+          y: -25,
+        },
+        100: {
+          opacity: 0,
+          y: 0,
+        },
+      },
+    },
+    {
+      options: {
+        name: "block--2",
+        start: 0.25,
+        end: 1,
+        ref: block2ref,
+      },
+      keyframes: {
+        0: {
+          opacity: 0,
+          y: 100,
+        },
+        25: {
+          opacity: 1,
+          y: 75,
+        },
+        100: {
+          opacity: 0,
+          y: 0,
+        },
+      },
+    },
+  ];
+
+  tween(animations, percentageProgressed);
+}, [percentageProgressed, tween]);
+                  `}
+                    language="javascript"
+                    showLineNumbers={true}
+                    theme={dracula}
+                  />
+                </div>
               </div>
             </Sticky>
           </StickyContainer>

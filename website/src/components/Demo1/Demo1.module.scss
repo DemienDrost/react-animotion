@@ -9,6 +9,11 @@
             .right {
                 background-color: var(--secondary);
                 padding: 2rem;
+                
+                .codeBlock {
+                    max-height: 30vh;
+                    overflow-y: auto;
+                }
             }
         }
     }

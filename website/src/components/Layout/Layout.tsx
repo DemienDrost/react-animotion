@@ -1,5 +1,6 @@
 import { Link, Outlet } from "react-router-dom";
 import styles from "./Layout.module.scss";
+import logo from "../../assets/Logo light.svg";
 
 const Layout = () => {
   return (
@@ -7,12 +8,15 @@ const Layout = () => {
       <nav className={styles.nav}>
         <div className="container">
           <div className="logo">
-            <img src="" alt="TBA" />
+            <img src={logo} alt="Logo React Animotion" />
           </div>
           <ul className="nav-links">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/docs">Docs</Link></li>
-            <li><Link to="/demo">Demo</Link></li>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/demo">Demo</Link>
+            </li>
           </ul>
         </div>
       </nav>
