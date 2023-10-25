@@ -1,4 +1,4 @@
-![React animotion](https://demiendrost.github.io/react-animotion/src/assets/Logo%20light.svg)
+![React animotion](https://demiendrost.github.io/react-animotion/assets/Logo%20light-f2c4889e.svg)
 
 An open source library for React, made by Arcadians.
 
