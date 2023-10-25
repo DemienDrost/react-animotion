@@ -1,6 +1,6 @@
 {
   "name": "react-animotion",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "type": "module",
   "scripts": {
     "rollup": "rollup -c --bundleConfigAsCjs"
@@ -14,7 +14,7 @@
   "bugs": {
     "url": "https://github.com/DemienDrost/react-animotion/issues"
   },
-  "homepage": "https://github.com/DemienDrost/react-animotion#readme",
+  "homepage": "https://demiendrost.github.io/react-animotion",
   "peerDependencies": {
     "react": "^18.2.0",
     "tslib": "^2.6.2"
